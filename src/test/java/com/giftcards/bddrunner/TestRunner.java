@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="I:\\eclipse-workspace\\giftcards.bdd\\src\\main\\resources\\TestResource\\ValidLogin.feature",
+		features="I:\\eclipse-workspace\\giftcards.bdd\\src\\main\\resources\\TestResource\\Features\\ValidLogin.feature",
 		glue= {"com.giftcards.steps"},
 //		dryRun=true,
 		strict=true,

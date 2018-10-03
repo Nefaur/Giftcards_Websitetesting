@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 31048841149,
+              "duration": 14268453201,
               "status": "passed"
             },
             "line": 8,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 5925822078,
+              "duration": 10263126675,
               "status": "passed"
             },
             "line": 9,
@@ -42,7 +42,7 @@
           },
           {
             "result": {
-              "duration": 11981831589,
+              "duration": 1175508780,
               "status": "passed"
             },
             "line": 10,
@@ -54,7 +54,7 @@
           },
           {
             "result": {
-              "duration": 2362864143,
+              "duration": 1986661975,
               "status": "passed"
             },
             "line": 11,
@@ -66,7 +66,7 @@
           },
           {
             "result": {
-              "duration": 4514327852,
+              "duration": 596125723,
               "status": "passed"
             },
             "line": 12,
@@ -84,7 +84,7 @@
           },
           {
             "result": {
-              "duration": 405467665,
+              "duration": 108026112,
               "status": "passed"
             },
             "line": 13,
@@ -102,7 +102,7 @@
           },
           {
             "result": {
-              "duration": 6800188262,
+              "duration": 8704807692,
               "status": "passed"
             },
             "line": 14,
@@ -114,7 +114,7 @@
           },
           {
             "result": {
-              "duration": 5141661724,
+              "duration": 5081266238,
               "status": "passed"
             },
             "line": 15,
@@ -126,7 +126,7 @@
           },
           {
             "result": {
-              "duration": 2483185781,
+              "duration": 1732704461,
               "status": "passed"
             },
             "line": 16,
@@ -138,7 +138,7 @@
           },
           {
             "result": {
-              "duration": 3060111922,
+              "duration": 3052608646,
               "status": "passed"
             },
             "line": 17,
@@ -163,7 +163,7 @@
     "description": "Description: Test to check whether a user can follow the process to login and logout of Member Page.",
     "id": "login-function-test",
     "keyword": "Feature",
-    "uri": "I:/eclipse-workspace/giftcards.bdd/src/main/resources/TestResource/ValidLogin.feature",
+    "uri": "I:/eclipse-workspace/giftcards.bdd/src/main/resources/TestResource/Features/ValidLogin.feature",
     "tags": [
       {
         "name": "@FunctionalTest",

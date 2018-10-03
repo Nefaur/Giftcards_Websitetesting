@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("I:/eclipse-workspace/giftcards.bdd/src/main/resources/TestResource/ValidLogin.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("I:/eclipse-workspace/giftcards.bdd/src/main/resources/TestResource/Features/ValidLogin.feature");
 formatter.feature({
   "name": "Login function test",
   "description": "Description: Test to check whether a user can follow the process to login and logout of Member Page.",
