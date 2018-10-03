@@ -1,0 +1,178 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 6,
+        "name": "User enters valids username and password to enter authorized login homepage",
+        "description": "",
+        "id": "login-function-test;user-enters-valids-username-and-password-to-enter-authorized-login-homepage",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 31048841149,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User opens browser",
+            "match": {
+              "location": "Validlogin.user_opens_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5925822078,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User goes to \"https://www.giftcards.com/\" website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.giftcards.com/\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Validlogin.user_goes_to_website(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11981831589,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User hovers to sign_in_link",
+            "match": {
+              "location": "Validlogin.user_hovers_to_sign_in_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2362864143,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks sign_in_link",
+            "match": {
+              "location": "Validlogin.user_clicks_sign_in_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4514327852,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enters \"moltenboy.robin@gmail.com\" as username",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"moltenboy.robin@gmail.com\"",
+                  "offset": 12
+                }
+              ],
+              "location": "Validlogin.user_enters_as_username(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 405467665,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters \"A1234567@\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"A1234567@\"",
+                  "offset": 12
+                }
+              ],
+              "location": "Validlogin.user_enters_as_password(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6800188262,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User clicks on submit button",
+            "match": {
+              "location": "Validlogin.user_clicks_on_submit_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5141661724,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User is taken to member page",
+            "match": {
+              "location": "Validlogin.user_is_taken_to_member_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2483185781,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User logsout",
+            "match": {
+              "location": "Validlogin.user_logsout()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3060111922,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User closes browser",
+            "match": {
+              "location": "Validlogin.user_closes_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Login function test",
+    "description": "Description: Test to check whether a user can follow the process to login and logout of Member Page.",
+    "id": "login-function-test",
+    "keyword": "Feature",
+    "uri": "I:/eclipse-workspace/giftcards.bdd/src/main/resources/TestResource/ValidLogin.feature",
+    "tags": [
+      {
+        "name": "@FunctionalTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

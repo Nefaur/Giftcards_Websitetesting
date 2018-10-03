@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.giftcards.bddrunner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 40.395 s - in com.giftcards.bddrunner.TestRunner

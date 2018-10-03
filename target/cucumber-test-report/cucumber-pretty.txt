@@ -1,0 +1,16 @@
+@FunctionalTest
+Feature: Login function test
+Description: Test to check whether a user can follow the process to login and logout of Member Page.
+
+  @FunctionalTest @Smoke
+  Scenario: User enters valids username and password to enter authorized login homepage # I:/eclipse-workspace/giftcards.bdd/src/main/resources/TestResource/ValidLogin.feature:6
+    Given User opens browser                                                            # Validlogin.user_opens_browser()
+    When User goes to "https://www.giftcards.com/" website                              # Validlogin.user_goes_to_website(String)
+    Then User hovers to sign_in_link                                                    # Validlogin.user_hovers_to_sign_in_link()
+    Then User clicks sign_in_link                                                       # Validlogin.user_clicks_sign_in_link()
+    Then User enters "moltenboy.robin@gmail.com" as username                            # Validlogin.user_enters_as_username(String)
+    Then User enters "A1234567@" as password                                            # Validlogin.user_enters_as_password(String)
+    Then User clicks on submit button                                                   # Validlogin.user_clicks_on_submit_button()
+    Then User is taken to member page                                                   # Validlogin.user_is_taken_to_member_page()
+    Then User logsout                                                                   # Validlogin.user_logsout()
+    Then User closes browser                                                            # Validlogin.user_closes_browser()
