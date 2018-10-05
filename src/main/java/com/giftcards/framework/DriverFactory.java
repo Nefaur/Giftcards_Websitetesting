@@ -115,9 +115,23 @@ public class DriverFactory {
 				} catch (MalformedURLException e) {
 					e.printStackTrace();
 				}
+			}else if(browser.equalsIgnoreCase("safari-mac-cloud")) {
+				DesiredCapabilities caps = new DesiredCapabilities();
+				caps.setCapability("browser", "Safari");
+			    caps.setCapability("browser_version", "11.0");
+			    caps.setCapability("os", "OS X");
+			    caps.setCapability("os_version", "High Sierra");
+			    caps.setCapability("resolution", "1920x1080");
+
+			    try {
+					WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
+					instance.driverBase.set(driver);
+				} catch (MalformedURLException e) {
+					e.printStackTrace();
+				}
 			}
 		}
-			
+
 		return instance;
 	}
 	
