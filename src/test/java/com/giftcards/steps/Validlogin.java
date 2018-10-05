@@ -42,6 +42,7 @@ public class Validlogin extends TestBase{
 
 	@Then("User enters {string} as username")
 	public void user_enters_as_username(String username) {
+		login.verify_LoginPage();
 		login.enterUsername(username);
 	}
 	

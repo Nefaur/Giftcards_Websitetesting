@@ -13,7 +13,6 @@ public class ScriptBase extends TestBase{
 	
 	@Before
 	public void setUp() {
-	
 	driver.manage().deleteAllCookies();
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
@@ -22,9 +21,13 @@ public class ScriptBase extends TestBase{
 	
 	@After
 	public void tearDown() {
-	driver.close();
-	driver.quit();
-	driver=null;
+	try {
+		driver.close();
+		driver.quit();
+		driver=null;
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
 	}
 }
 	

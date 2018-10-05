@@ -16,7 +16,7 @@ public class PageManager {
 		return(instance==null)? instance=new PageManager():instance;
 	}
 	
-			public HomePage getHome() {
+		public HomePage getHome() {
 			return (home==null)? home=new HomePage():home;
 		}
 			

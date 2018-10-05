@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="66.503518">
-    <testcase classname="Login function test" name="User enters valids username and password to enter authorized login homepage" time="66.503518">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="22.532451">
+    <testcase classname="Login function test" name="User enters valids username and password to enter authorized login homepage" time="22.532451">
         <system-out>
             <![CDATA[Given User opens browser....................................................passed
 When User goes to "https://www.giftcards.com/" website......................passed
