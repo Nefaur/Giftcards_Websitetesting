@@ -129,6 +129,20 @@ public class DriverFactory {
 				} catch (MalformedURLException e) {
 					e.printStackTrace();
 				}
+			}else if(browser.equalsIgnoreCase("ff-cloud")) {
+				DesiredCapabilities caps = new DesiredCapabilities();
+				 caps.setCapability("browser", "Firefox");
+				    caps.setCapability("browser_version", "60.0");
+				    caps.setCapability("os", "Windows");
+				    caps.setCapability("os_version", "10");
+				    caps.setCapability("resolution", "2048x1536");
+
+			    try {
+					WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
+					instance.driverBase.set(driver);
+				} catch (MalformedURLException e) {
+					e.printStackTrace();
+				}
 			}
 		}
 
