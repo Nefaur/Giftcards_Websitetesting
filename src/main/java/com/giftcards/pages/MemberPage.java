@@ -2,6 +2,8 @@ package com.giftcards.pages;
 
 
 
+import java.util.concurrent.TimeUnit;
+
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -39,6 +41,7 @@ public class MemberPage {
 	}
 	
 	public void verify_MemberPage() {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		String memberPageURL=driver.getCurrentUrl();
 		Assert.assertEquals(expectedMemberPageURL, memberPageURL);
 		System.out.println("Memberpage URL is: "+memberPageURL);

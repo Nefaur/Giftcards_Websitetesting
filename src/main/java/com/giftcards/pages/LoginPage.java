@@ -1,5 +1,7 @@
 package com.giftcards.pages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -40,6 +42,7 @@ public class LoginPage {
 	}
 	
 	public void verify_LoginPage() {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		String expectedLoginPageURL=driver.getCurrentUrl();
 		Assert.assertEquals(expectedLoginPageURL, loginPageURL);
 		System.out.println("Loginpage URL is: "+expectedLoginPageURL);

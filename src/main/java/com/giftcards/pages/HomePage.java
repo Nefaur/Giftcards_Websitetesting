@@ -3,9 +3,7 @@ package com.giftcards.pages;
 
 
 import static org.junit.Assert.assertTrue;
-
 import org.junit.Assert;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

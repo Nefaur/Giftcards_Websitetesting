@@ -1,0 +1,9 @@
+com\giftcards\pages\HomePage.class
+com\giftcards\utilities\ColorVerify.class
+com\giftcards\pages\LoginPage.class
+com\giftcards\utilities\JavaScriptActions.class
+com\giftcards\pages\PageManager.class
+com\giftcards\framework\PropertyReader.class
+com\giftcards\utilities\Mouseactions.class
+com\giftcards\framework\DriverFactory.class
+com\giftcards\pages\MemberPage.class
