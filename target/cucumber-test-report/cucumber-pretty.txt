@@ -1,8 +1,8 @@
-@FunctionalTest
+@First @FunctionalTest
 Feature: Login function test
 Description: Test to check whether a user can follow the process to login and logout of Member Page.
 
-  @FunctionalTest @Smoke
+  @First @FunctionalTest @Smoke
   Scenario: User enters valids username and password to enter authorized login homepage # I:/eclipse-workspace/giftcards.bdd/src/main/resources/TestResource/Features/ValidLogin.feature:6
     Given User opens browser                                                            # Validlogin.user_opens_browser()
     When User goes to "https://www.giftcards.com/" website                              # Validlogin.user_goes_to_website(String)
@@ -11,6 +11,34 @@ Description: Test to check whether a user can follow the process to login and lo
     Then User enters "moltenboy.robin@gmail.com" as username                            # Validlogin.user_enters_as_username(String)
     Then User enters "A1234567@" as password                                            # Validlogin.user_enters_as_password(String)
     Then User clicks on submit button                                                   # Validlogin.user_clicks_on_submit_button()
+      org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'NEFAUR', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: C:\Users\Asus\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62726}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 90c2eaae54bf52c52b91f9078c7f8610
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:286)
+	at com.giftcards.pages.LoginPage.validUserClickSubmit(LoginPage.java:113)
+	at com.giftcards.steps.Validlogin.user_clicks_on_submit_button(Validlogin.java:56)
+	at ✽.User clicks on submit button(I:/eclipse-workspace/giftcards.bdd/src/main/resources/TestResource/Features/ValidLogin.feature:14)
+
     Then User is taken to member page                                                   # Validlogin.user_is_taken_to_member_page()
     Then User logsout                                                                   # Validlogin.user_logsout()
     Then User closes browser                                                            # Validlogin.user_closes_browser()

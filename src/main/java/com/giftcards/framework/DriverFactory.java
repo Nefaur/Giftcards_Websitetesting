@@ -86,7 +86,7 @@ public class DriverFactory {
 				
 			case "ff-grid":
 				caps = new DesiredCapabilities();
-		        caps.setPlatform(Platform.ANY);
+		        caps.setPlatform(Platform.WIN10);
 		        caps.setBrowserName("firefox");
 		        caps.setCapability("marionette", true);
 		        try {

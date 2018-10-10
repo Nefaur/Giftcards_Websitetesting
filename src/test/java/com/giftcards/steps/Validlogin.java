@@ -53,7 +53,7 @@ public class Validlogin extends TestBase{
 
 	@Then("User clicks on submit button")
 	public void user_clicks_on_submit_button() {
-		login.clickSubmit();
+		login.validUserClickSubmit();
 	}
 
 	@Then("User is taken to member page")
@@ -70,7 +70,7 @@ public class Validlogin extends TestBase{
 	@Then("User closes browser")
 	public void user_closes_browser() {
 		PageManager.getInstance().closePages();
-		base.tearDown();
+//		base.tearDown();
 	}
 	
 	

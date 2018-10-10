@@ -9,8 +9,8 @@ import cucumber.api.java.Before;
 
 
 public class ScriptBase extends TestBase{
-	
-	
+
+		
 	@Before
 	public void setUp() {
 	driver.manage().deleteAllCookies();

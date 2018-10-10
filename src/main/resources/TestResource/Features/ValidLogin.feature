@@ -1,4 +1,4 @@
-@FunctionalTest
+@First @FunctionalTest
 Feature: Login function test
 Description: Test to check whether a user can follow the process to login and logout of Member Page.
 

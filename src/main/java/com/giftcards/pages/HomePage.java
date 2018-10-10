@@ -3,16 +3,13 @@ package com.giftcards.pages;
 
 
 import static org.junit.Assert.assertTrue;
-
 import java.util.concurrent.TimeUnit;
-
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-
 import com.giftcards.framework.DriverFactory;
 import com.giftcards.framework.PropertyReader;
 import com.giftcards.utilities.Mouseactions;
@@ -28,7 +25,7 @@ public class HomePage{
 	
 	@FindBy(how=How.XPATH,using="//a[contains(text(),'Sign In')]")
 	WebElement SIGN_IN_LINK;
-	
+
 	private Mouseactions mousefunction=new Mouseactions();
 	private String expectedHomePageURL="https://www.giftcards.com/";
 	private String expectedHomePageTitle="Buy Gift Cards, eGift Cards, Visa & Discount | GiftCards.com";
